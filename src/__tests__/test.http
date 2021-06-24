@@ -1,0 +1,28 @@
+###
+GET http://localhost:1234/medico/listar
+
+###
+GET http://localhost:1234/medico/buscar/2014200
+
+###
+POST http://localhost:1234/medico/cadastrar
+Content-Type: application/json
+
+{
+  "nome": "Paula Brito",
+  "crm": "2014200",
+  "especialidade": "Pediatra"
+}
+
+###
+DELETE http://localhost:1234/medico/remover/2014200
+
+###
+PUT http://localhost:1234/medico/alterar
+Content-Type: application/json
+
+{
+  "nome": "Ana Paula de Jesus França",
+  "crm": "2014200",
+  "especialidade": "Ortopedista"
+}
